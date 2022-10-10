@@ -6,7 +6,7 @@ import "./App.css";
 const App = () => {
   const [searchField, setSearchField] = useState(""); // [value, setValue]
   const [monsters, setMonsters] = useState([]);
-
+  console.log("render");
   useEffect(()=>{
     console.log("effect fired");
     fetch("https://jsonplaceholder.typicode.com/users")
